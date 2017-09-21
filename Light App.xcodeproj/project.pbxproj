@@ -13,6 +13,8 @@
 		42C571C31F7214ED008ABE7B /* Light_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42C571C11F7214ED008ABE7B /* Light_App.xcdatamodeld */; };
 		42C571C51F7214ED008ABE7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42C571C41F7214ED008ABE7B /* Assets.xcassets */; };
 		42C571C81F7214ED008ABE7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42C571C61F7214ED008ABE7B /* LaunchScreen.storyboard */; };
+		42C571D21F721E73008ABE7B /* SwitchStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C571D11F721E73008ABE7B /* SwitchStatus.swift */; };
+		42C571D41F721EAD008ABE7B /* Toggleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C571D31F721EAD008ABE7B /* Toggleable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		42C571C41F7214ED008ABE7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42C571C71F7214ED008ABE7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42C571C91F7214ED008ABE7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42C571D11F721E73008ABE7B /* SwitchStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchStatus.swift; sourceTree = "<group>"; };
+		42C571D31F721EAD008ABE7B /* Toggleable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toggleable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		42C571B91F7214ED008ABE7B /* Light App */ = {
 			isa = PBXGroup;
 			children = (
+				42C571D01F721E59008ABE7B /* Protocols */,
+				42C571CF1F721E38008ABE7B /* Enums */,
 				42C571BA1F7214ED008ABE7B /* AppDelegate.swift */,
 				42C571BC1F7214ED008ABE7B /* ViewController.swift */,
 				42C571BE1F7214ED008ABE7B /* Main.storyboard */,
@@ -65,6 +71,22 @@
 				42C571C11F7214ED008ABE7B /* Light_App.xcdatamodeld */,
 			);
 			path = "Light App";
+			sourceTree = "<group>";
+		};
+		42C571CF1F721E38008ABE7B /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				42C571D11F721E73008ABE7B /* SwitchStatus.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		42C571D01F721E59008ABE7B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				42C571D31F721EAD008ABE7B /* Toggleable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +163,9 @@
 			files = (
 				42C571BD1F7214ED008ABE7B /* ViewController.swift in Sources */,
 				42C571C31F7214ED008ABE7B /* Light_App.xcdatamodeld in Sources */,
+				42C571D41F721EAD008ABE7B /* Toggleable.swift in Sources */,
 				42C571BB1F7214ED008ABE7B /* AppDelegate.swift in Sources */,
+				42C571D21F721E73008ABE7B /* SwitchStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4YEP43V2YP;
 				INFOPLIST_FILE = "Light App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "wild.Light-App";
@@ -293,6 +318,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4YEP43V2YP;
 				INFOPLIST_FILE = "Light App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "wild.Light-App";
